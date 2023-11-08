@@ -1,0 +1,38 @@
+{
+    "authors": [ ],
+    "instructors": {
+        "title": "",
+        "value": [
+            {
+                "name": "",
+                "email": ""
+            },
+            {
+                "name": "",
+                "email": ""
+            }
+        ]
+    },
+    "implementers": {
+        "title":"",
+        "value": [
+            {
+                "name": "Ha Vinh Nguyen - 2011698",
+                "email": "nguyen.ha.professor@hcmut.edu.vn"
+            },
+            {
+                "name": "",
+                "email": ""
+            },
+            {
+                "name": "",
+                "email": ""
+            },
+            {
+                "name": "",
+                "email": ""
+            }
+        ]
+    },
+    "location": "Ho Chi Minh City"
+}

@@ -1,0 +1,97 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [ "/src/config.json" ],
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "lang": {
+                        "type": "string",
+                        "enum": ["en", "vi"]
+                    }
+                }
+            }
+        },
+        {
+            "fileMatch": [ "src/input.json" ],
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "university": {
+                        "type": "string",
+                        "default": "ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH\nTRƯỜNG ĐẠI HỌC BÁCH KHOA",
+                    },
+                    "faculty": {
+                        "type": "string",
+                        "default": "KHOA KHOA HỌC & KĨ THUẬT MÁY TÍNH",
+                    },
+                    "subject": {
+                        "type": "string",
+                        "default": "",
+                    },
+                    "project": {
+                        "type": "string",
+                        "default": "",
+                    },
+                    "authors": {
+                        "description": "List of document authors",
+                        "type": "array",
+                        "items": {
+                            "description": "Document author",
+                            "type": "string"
+                        },
+                        "default": [ ]
+                    },
+                    "instructors": {
+                        "description": "List of instructors",
+                        "type": "array",
+                        "items": {
+                            "description": "Instructor",
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "description": "Instructor name",
+                                    "type": "string"
+                                },
+                                "email": {
+                                    "description": "Instructor email",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [ "name", "email" ]
+                        },
+                        "default": [
+                            { "name": "", "email": "" },
+                            { "name": "", "email": "" },
+                        ]
+                    },
+                    "implementers": {
+                        "description": "List of implementers",
+                        "type": "array",
+                        "items": {
+                            "description": "Implementer",
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "description": "Implementer name",
+                                    "type": "string"
+                                },
+                                "email": {
+                                    "description": "Implementer email",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [ "name", "email" ]
+                        },
+                        "default": [
+                            { "name": "Hà Vĩnh Nguyên - 2011698", "email": "nguyen.ha.professor@hcmut.edu.vn" },
+                            { "name": "", "email": "" },
+                            { "name": "", "email": "" },
+                            { "name": "", "email": "" },
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

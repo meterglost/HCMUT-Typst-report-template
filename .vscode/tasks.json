@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Hot rebuild",
+            "type": "process",
+            "command": "typst",
+            "args": [ "watch", "--font-path", "src/fonts/", "src/main.typ", "out/main.pdf" ],
+            "runOptions": {
+                "runOn": "folderOpen",
+                "instanceLimit": 1
+            },
+        }
+    ]
+}

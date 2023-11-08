@@ -1,0 +1,12 @@
+FROM docker.io/rust:latest AS build
+
+RUN cargo install --quiet --no-track --git https://github.com/astrale-sharp/typstfmt.git
+
+FROM docker.io/ubuntu:jammy
+
+COPY --from=ghcr.io/typst/typst:latest /bin/typst /usr/bin/typst
+COPY --from=build /usr/local/cargo/bin/typstfmt /usr/bin/typstfmt
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends git=* make=* && \
+    rm -rf /var/lib/apt/lists/*

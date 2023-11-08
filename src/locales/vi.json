@@ -1,0 +1,36 @@
+{
+    "university": "ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH\nTRƯỜNG ĐẠI HỌC BÁCH KHOA",
+    "faculty": "KHOA KHOA HỌC & KĨ THUẬT MÁY TÍNH",
+    "subject": "",
+    "project": "",
+    "authors": [ ],
+    "instructors": [
+        {
+            "name": "",
+            "email": ""
+        },
+        {
+            "name": "",
+            "email": ""
+        }
+    ],
+    "implementers": [
+        {
+            "name": "Hà Vĩnh Nguyên - 2011698",
+            "email": "nguyen.ha.professor@hcmut.edu.vn"
+        },
+        {
+            "name": "",
+            "email": ""
+        },
+        {
+            "name": "",
+            "email": ""
+        },
+        {
+            "name": "",
+            "email": ""
+        }
+    ],
+    "location": "Thành phố Hồ Chí Minh"
+}
