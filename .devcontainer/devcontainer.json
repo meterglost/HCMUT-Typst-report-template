@@ -26,11 +26,7 @@
 		"vscode": {
 			"extensions": [
 				"nvarner.typst-lsp",
-				"ionutvmi.path-autocomplete",
-				"mhutchie.git-graph",
-				"redjue.git-commit-plugin",
-				"ms-azuretools.vscode-docker",
-				"Codeium.codeium"
+				"ionutvmi.path-autocomplete"
 			],
 			"settings": {
 				"typst-lsp.exportPdf": "never"
